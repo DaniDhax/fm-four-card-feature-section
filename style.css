@@ -103,7 +103,86 @@ body {
   justify-content: center;
 }
 
+.container {
+  border: 1px solid black;
+  width:320px;
+  margin: 75px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+span {
+  display: block;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title h1 {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+
+.section-title p {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+}
+
+.section-cards {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  row-gap: 25px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 15px var(--grayish-blue);
+}
+
+.card h2 {
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+}
+
+.card p {
+  font-size: 1.2rem;
+  padding: 0 2.5rem;
+  color: var(--grayish-blue);
+}
+
+.card hr {
+  border: 1.6px solid;
+  margin: 0;
+  
+}
+.card img {
+  height: 50px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
 
 
 @media (min-width: 900px) {
@@ -111,16 +190,23 @@ body {
   .container {
     border: 1px solid black;
     width: 90vw;
+    max-width: 1000px;
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: unset;
   }
   
   .section-title {
     border: 1px solid black;
-    width: 35%;
+    width: 50%;
     height: 30%;
+  }
+
+  .section-title p {
+    font-size: 1.2rem;
+    margin-bottom: unset;
   }
   
   .section-cards {
@@ -131,6 +217,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
+    row-gap: unset;
   }
 
   .card {
