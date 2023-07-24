@@ -214,6 +214,7 @@ span {
   .section-title {
     width: 50%;
     height: 30%;
+    margin-bottom: unset;
   }
 
   .section-title p {
