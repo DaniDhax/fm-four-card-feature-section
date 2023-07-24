@@ -104,7 +104,6 @@ body {
 }
 
 .container {
-  border: 1px solid black;
   width:320px;
   margin: 75px 0;
   display: flex;
@@ -139,7 +138,6 @@ span {
 }
 
 .section-cards {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
   display: flex;
@@ -150,7 +148,7 @@ span {
 }
 
 .card {
-  border: 1px solid black;
+
   border-radius: 10px;
   width: 100%;
   height: 200px;
@@ -182,6 +180,22 @@ span {
   position: absolute;
   right: 25px;
   bottom: 25px;
+}
+
+.card:nth-child(1) hr {
+  color: var(--cyan);
+}
+
+.card:nth-child(2) hr {
+  color: var(--red);
+}
+
+.card:nth-child(3) hr {
+  color: var(--orange);
+}
+
+.card:nth-child(4) hr {
+  color: var(--blue);
 }
 
 
